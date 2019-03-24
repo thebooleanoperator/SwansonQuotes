@@ -1,3 +1,17 @@
+##Basic Information
+This is to answer the programming assignment given at: https://github.com/oforce/junior-full-stack-dev/blob/master/README.md
+
+The back end is written in Python and served using Flask. Code located in flask_app
+
+Rating data is stored in NOSQL database using MongoDB 
+
+The front end is written using React/JavaScript 
+
+**The rest of this README is boilerplate from Create React App**
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## available Scripts
