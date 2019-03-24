@@ -36,7 +36,7 @@ def addRatingToDB(q, r, ip):
         quotedb.insert_one({"quote": q, "count": 1, "rating": int(r), "sum":int(r), "ip": [ip]})
     
     else:
-        quotedb.update({"quote": q},{"$inc": {"count": 1, "sum": int(r)}}, {"$push": {"ip": ip}})
+        quotedb.update({"quote": q},{"$inc": {"count": 1, "sum": int(r)}, {"$push": {"ip": ip}})
 
     cursor = quotedb.find_one({"quote": q})
 
@@ -69,7 +69,7 @@ class AverageRating(Resource):
         
         if not exists:
             retJson = {
-                "rating": "This quote has not been rated yet!"
+                "rating": 0
             }
             return jsonify(retJson)
 
