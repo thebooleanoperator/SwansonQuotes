@@ -20,7 +20,7 @@ class Quotes extends React.Component{
                 <br/>
                 <p id="quoteText"><strong id="quotePreface">Ron Says:</strong> "{this.props.quote}"</p>
                 <p id = "ratingPreface">Rating:</p>
-                <div id="starComponenet"><StarRatingComponent name="rate1" starCount={5} value={this.props.rating} emptyStarColor="lightgray" /></div>
+                <div id="starComponenet"><StarRatingComponent name="rate1" starCount={5} value={this.props.rating} emptyStarColor="lightgray" editing={false} /></div>
             </form> 
         );
     }
