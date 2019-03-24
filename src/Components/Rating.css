@@ -1,0 +1,35 @@
+/*styles the entire rating form*/
+.ratings{
+    width: 300px; 
+    text-align: center;
+}
+
+/*heading for the rating form*/
+#ratingQHeader{
+    font-size: 28px; 
+    margin-left: 8px; 
+}
+
+/*Dropdown rating menu*/
+.ratingDropdown{
+    background-color: antiquewhite; 
+    color: darkblue; 
+    width: 67px;
+    font-size: 15px;  
+    text-align: center; 
+    padding: 4px; 
+}
+
+/*submit rating button*/
+#subButton{
+    padding:5px; 
+    text-align: center; 
+    font-size: 15px; 
+    background-color: lightgray; 
+    color: darkblue; 
+    margin: 5px;
+    
+}
+
+
+

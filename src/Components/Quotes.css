@@ -1,0 +1,68 @@
+/*Center entire quote form*/
+.quoteRating{
+    text-align: center; 
+}
+
+/*Styling for asking user what size they want*/
+#sizeQuestion{
+    text-align: center; 
+    font-size: 30px; 
+}
+
+/*Styling for all buttons*/
+.sizeChoice{
+    color: darkslategray; 
+    font-size: 30px;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+}
+
+/*individual size radial button styling*/
+#small{
+    margin:15px; 
+}
+
+#medium{
+    margin: 15px; 
+}
+
+#large{
+    margin: 15px; 
+}
+
+/*"Click to Get Quote!" button*/
+#quoteButton {
+    background-color: lightgray; 
+    font-size: 30px; 
+    color: darkblue;
+}
+
+/*Quote that gets rendered to screen*/
+#quoteText {
+    font-size: 45px; 
+    font-weight: bolder; 
+    font-style: italic;
+    color: red; 
+    margin: 18px; 
+}
+
+/*Preface "Ron Says"*/
+#quoteText #quotePreface{
+    color: black; 
+    margin: 18px; 
+}
+
+/*Preface "Rating:"*/
+#ratingPreface{
+    color: black;
+    display: inline; 
+    font-size: 30px; 
+    font-weight: 600; 
+    margin-right: 15px; 
+}
+
+/*Star widget*/
+#starComponenet{
+    display: inline;
+    font-size: 30px;
+}
