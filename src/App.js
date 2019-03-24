@@ -11,7 +11,7 @@ class App extends React.Component{
         this.state ={
             quote: 'Click the button to find out!', 
             size: '',
-            rating: 'Get quote to get rating',
+            rating: 0,
             userRating: '1',
             alreadyRatedMsg: 'Click Get Quote! to rate a quote'
         };
