@@ -1,4 +1,4 @@
-##Basic Information
+## Basic Information
 This is to answer the programming assignment given at: https://github.com/oforce/junior-full-stack-dev/blob/master/README.md
 
 The back end is written in Python and served using Flask. Code located in flask_app
