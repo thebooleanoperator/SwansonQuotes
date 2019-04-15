@@ -1,6 +1,7 @@
 {
   "name": "swanson-app",
   "version": "0.1.0",
+  "description": "A project that rates Ron Swanson Quotes",
   "private": true,
   "dependencies": {
     "react": "^16.8.4",

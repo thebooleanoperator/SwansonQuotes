@@ -1,6 +1,7 @@
-import React from 'react'; 
-import Quotes from './Components/Quotes'
-import Rating from './Components/Rating'
+import React from 'react';
+import Quotes from './Components/Quotes';
+import Rating from './Components/Rating';
+import './App.css'
 
 /*constant used to adjust the number of quotes that we get back from the swanson API at a time*/ 
 const numQuotes = 10
@@ -9,11 +10,11 @@ class App extends React.Component{
     constructor(props){
         super(props); 
         this.state ={
-            quote: 'Click the button to find out!', 
+            quote: 'Click the button to get a quote!', 
             size: '',
             rating: 0,
             userRating: '1',
-            alreadyRatedMsg: 'Click Get Quote! to rate a quote'
+            alreadyRatedMsg: ''
         };
         this.getQuote = this.getQuote.bind(this);
         this.updateSize = this.updateSize.bind(this);
@@ -91,7 +92,7 @@ class App extends React.Component{
             body: JSON.stringify({"quote": quote})
         }
 
-        const request = new Request('http://localhost:5000/average', options)
+        const request = new Request('http://52.15.228.236:5000/average', options)
        
         let newRating;
 
@@ -127,7 +128,7 @@ class App extends React.Component{
             body: JSON.stringify({"quote": quote, "rating": rating})
         }
         
-        const request = new Request('http://localhost:5000/rate', options)
+        const request = new Request('http://52.15.228.236:5000/rate', options)
 
         let successConfirm; 
 
@@ -168,14 +169,15 @@ class App extends React.Component{
     render(){
         return (
             <div>
+                <div className="renderQuote">
                 <Quotes 
                 getQuote={this.getQuote} 
                 updateSize = {this.updateSize}
                 quote={this.state.quote} 
                 rating={this.state.rating}
                 />
-
-                <p style={{color: 'red', fontWeight: 'bold', fontSize: '18px', width: "300px", textAlign: "center"}}>{this.state.alreadyRatedMsg}</p>
+                </div>
+                <p id="ratingResponse">{this.state.alreadyRatedMsg}</p>
 
                 <Rating 
                 rateQuote={this.rateQuote}

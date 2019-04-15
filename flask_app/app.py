@@ -6,7 +6,6 @@ from pymongo import MongoClient
 app = Flask(__name__)
 CORS(app)
 
-app.debug = True 
 api = Api(app)
 
 client = MongoClient("localhost", 27017)
@@ -36,7 +35,7 @@ def addRatingToDB(q, r, ip):
         quotedb.insert_one({"quote": q, "count": 1, "rating": int(r), "sum":int(r), "ip": [ip]})
     
     else:
-        quotedb.update({"quote": q},{"$inc": {"count": 1, "sum": int(r)}, {"$push": {"ip": ip}})
+        quotedb.update({"quote": q},{"$inc": {"count": 1, "sum": int(r)}, "$push": {"ip": ip}})
 
     cursor = quotedb.find_one({"quote": q})
 
@@ -73,8 +72,9 @@ class AverageRating(Resource):
             }
             return jsonify(retJson)
 
+        
         rating = getAvgRating(quote)
-
+       
         retJson = {
             "rating": rating 
         }

@@ -1,0 +1,14 @@
+.renderQuote{
+    margin: 2% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ratingResponse{
+    text-align: center;
+    font-size: 23px; 
+    color:rgba(5, 5, 17, 0.729);
+    margin: 5% 0 0 0;
+    padding: 0;
+}

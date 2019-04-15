@@ -1,34 +1,54 @@
 /*styles the entire rating form*/
 .ratings{
-    width: 300px; 
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*heading for the rating form*/
 #ratingQHeader{
-    font-size: 28px; 
-    margin-left: 8px; 
+    font-size: 4vh;
+    margin: 15px 0 0 0;
+    display: inline;
+    justify-content: center;
+    color: rgba(235, 235, 250, 0.6);
 }
 
 /*Dropdown rating menu*/
 .ratingDropdown{
-    background-color: antiquewhite; 
-    color: darkblue; 
-    width: 67px;
-    font-size: 15px;  
-    text-align: center; 
-    padding: 4px; 
+    display: inline;
+    background-color: rgba(208, 210, 243, 0.7);
+    padding: 12px;
+    margin: 10px 0 0 0;
+    justify-content: center;
+    color: rgba(46, 46, 53, 0.7);
+    font-size: 15px
+}
+
+.ratingDropdown:hover{
+    background-color: rgba(208, 210, 243, 1);
+    font-weight: bolder;
 }
 
 /*submit rating button*/
 #subButton{
-    padding:5px; 
-    text-align: center; 
-    font-size: 15px; 
-    background-color: lightgray; 
-    color: darkblue; 
-    margin: 5px;
-    
+    background-color: rgba(29, 19, 167, 0.548);
+    margin: 0;
+    padding: 15px;
+    color: rgba(0, 255, 255, 0.548);
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid rgba(29, 19, 167, 0.548);
+}
+
+#subButton:hover{
+    background-color: rgba(6, 50, 58, 0.848);
+    border: 5px solid rgba(29, 19, 167, 0.548);
+    cursor: pointer;
 }
 
 

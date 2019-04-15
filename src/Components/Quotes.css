@@ -1,68 +1,70 @@
-/*Center entire quote form*/
 .quoteRating{
-    text-align: center; 
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-/*Styling for asking user what size they want*/
-#sizeQuestion{
-    text-align: center; 
-    font-size: 30px; 
+#ronThinking{
+    height: 18%;
+    width: 18%;
+    border: 1px solid black;
+    border-radius: 20%;
+    opacity: .7;
+    margin: 0;
+    padding: 0;
 }
 
-/*Styling for all buttons*/
 .sizeChoice{
-    color: darkslategray; 
-    font-size: 30px;  
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left: 40%;
+    width: 600px;
+    background-color: rgba(0, 255, 255, 0.548); 
+    border-radius: 5%;
 }
 
-/*individual size radial button styling*/
-#small{
-    margin:15px; 
+.sizeChoice label{
+    color: rgba(30, 9, 54, 0.629);
+    font-size: 22px;
+    padding: 0 10px 0 10px;
+    margin: 0;
 }
 
-#medium{
-    margin: 15px; 
+#userInfo{
+    font-size: 17px;
+    margin: 0 0 15px 0;
+    color: rgba(30, 9, 54, 0.629);
 }
 
-#large{
-    margin: 15px; 
+#quoteText{
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(63, 21, 112, 0.729); 
 }
 
-/*"Click to Get Quote!" button*/
-#quoteButton {
-    background-color: lightgray; 
-    font-size: 30px; 
-    color: darkblue;
+#quoteButton{
+    background-color: rgba(29, 19, 167, 0.548);
+    margin: 0;
+    padding: 15px;
+    color: rgba(0, 255, 255, 0.548);
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid rgba(29, 19, 167, 0.548);
 }
 
-/*Quote that gets rendered to screen*/
-#quoteText {
-    font-size: 45px; 
-    font-weight: bolder; 
-    font-style: italic;
-    color: red; 
-    margin: 18px; 
+#quoteButton:hover{
+    background-color: rgba(6, 50, 58, 0.848);
+    border: 5px solid rgba(29, 19, 167, 0.548);
+    cursor: pointer;
 }
 
-/*Preface "Ron Says"*/
-#quoteText #quotePreface{
-    color: black; 
-    margin: 18px; 
-}
-
-/*Preface "Rating:"*/
-#ratingPreface{
-    color: black;
-    display: inline; 
-    font-size: 30px; 
-    font-weight: 600; 
-    margin-right: 15px; 
-}
-
-/*Star widget*/
 #starComponenet{
-    display: inline;
-    font-size: 30px;
+    margin: 0;
 }
